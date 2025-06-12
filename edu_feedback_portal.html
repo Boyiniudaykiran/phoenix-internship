@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduFeedback Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #4a90e2;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    .container {
+      padding: 20px;
+    }
+    .feedback-form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .feedback-form input, .feedback-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .feedback-form button {
+      background-color: #4a90e2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .feedback-form button:hover {
+      background-color: #357abd;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>EduFeedback Hub</h1>
+  <p>Smart Feedback & Learning Portal</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#courses">Courses</a>
+  <a href="#feedback">Feedback</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+  <section id="courses">
+    <h2>📘 Our Courses</h2>
+    <ul>
+      <li>Web Development Basics</li>
+      <li>Data Science & ML</li>
+      <li>Cloud Computing</li>
+      <li>Cybersecurity Awareness</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <h2>📝 Give Us Your Feedback</h2>
+    <div class="feedback-form">
+      <form onsubmit="submitFeedback(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Feedback..." required></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 EduFeedback Hub. All rights reserved.
+</footer>
+
+<script>
+  function submitFeedback(event) {
+    event.preventDefault();
+    alert("Thank you for your feedback!");
+  }
+</script>
+
+</body>
+</html>
